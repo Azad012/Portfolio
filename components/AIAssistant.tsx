@@ -34,6 +34,7 @@ const AIAssistant: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     try {
       // Safely access API key
       const apiKey = typeof process !== 'undefined' ? process.env.API_KEY : '';
+    
       
       if (!apiKey) {
         throw new Error("API Key is not configured correctly.");
